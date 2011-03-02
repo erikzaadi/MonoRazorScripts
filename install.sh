@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 
 #echo
 #echo "Installing Mono on Nginx with Razor support"
@@ -10,12 +10,12 @@ mkdir -p /srv/www/monodocs
 #echo "Taking care of dependencies"
 #echo
 
-zypper --non-interactive addrepo http://ftp.novell.com/pub/mono/download-stable/openSUSE_11.3 mono-stable
-zypper --non-interactive addrepo http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/ openSUSE:Factory:Contrib 
-zypper --non-interactive refresh --repo mono-stable
-zypper --non-interactive refresh --repo openSUSE:Factory:Contrib 
-zypper --non-interactive dist-upgrade --repo mono-stable
-zypper --non-interactive dist-upgrade --repo openSUSE:Factory:Contrib 
+zypper addrepo http://ftp.novell.com/pub/mono/download-stable/openSUSE_11.3 mono-stable
+zypper addrepo http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/ openSUSE:Factory:Contrib 
+zypper refresh --repo mono-stable
+zypper refresh --repo openSUSE:Factory:Contrib 
+zypper dist-upgrade --repo mono-stable
+zypper dist-upgrade --repo openSUSE:Factory:Contrib 
 zypper --non-interactive install mono unzip xsp4 nginx monotools-server mono-data mono-data-sqlite mono-data-oracle mono-data-postgresql mono-mvc mono-nunit mono-tools mono-extras mono-addins mono-web mono-cyclic libgdiplus0
 
 #echo
