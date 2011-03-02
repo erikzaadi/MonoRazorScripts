@@ -3,4 +3,4 @@ Set of scripts to get you started with a fresh installation of OpenSuse, with ng
 clone (https://github.com/erikzaadi/MonoRazorScripts.git) or download and unzip (https://github.com/erikzaadi/MonoRazorScripts/zipball/master) this repository and run 
 sudo sh ./install.sh
 
-See [BLOGPOST] for more details
+See http://erikzaadi.com/blog/2011/03/02/InstallScriptToRunAspdotNETMvc3WithRazorOnNginxAtAOpenSuseServer.xhtml for more details
