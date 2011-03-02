@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+#!/bin/sh
 
 echo
 echo "Installing Mono on Nginx with Razor support"
