@@ -16,7 +16,7 @@ zypper -n --gpg-auto-import-keys refresh --repo mono-stable
 zypper -n --gpg-auto-import-keys refresh --repo openSUSE:Factory:Contrib 
 zypper -n dist-upgrade --repo mono-stable
 zypper -n dist-upgrade --repo openSUSE:Factory:Contrib 
-zypper -n install mono unzip xsp4 nginx-0.9 monotools-server mono-data mono-data-sqlite mono-data-oracle mono-data-postgresql mono-mvc mono-nunit mono-tools mono-extras mono-addins mono-web mono-cyclic libgdiplus0
+zypper -n install unzip nginx-0.9 monotools-server mono-data mono-data-sqlite mono-data-oracle mono-data-postgresql mono-mvc mono-nunit mono-tools mono-extras mono-addins mono-web libgdiplus0
 
 echo
 echo "Configuring system"
@@ -56,7 +56,7 @@ echo "configuration end, adding default content"
 echo
 
 rm -r /src/www/monodocs/default
-cp ./default /src/www/monodocs/default
+cp -r ./default /src/www/monodocs/default
 cp ./libs/* /src/www/monodocs/default/bin/
 cp ./Default.aspx /src/www/monodocs/default/
 
