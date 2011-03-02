@@ -46,7 +46,7 @@ echo
 rm /etc/nginx/nginx.conf
 cp ./nginx.conf /etc/nginx/nginx.conf
 rm /etc/nginx/fastcgi_params
-cp ./fastcgi_params /etc/nginx/sites-available/fastcgi_params
+cp ./fastcgi_params /etc/nginx/fastcgi_params
 
 rm /srv/www/monodocs/monosites.conf
 cp ./monosites.conf /srv/www/monodocs/monosites.conf
@@ -55,10 +55,10 @@ echo
 echo "configuration end, adding default content"
 echo
 
-rm -r /src/www/monodocs/default
-cp -r ./default /src/www/monodocs/default
-cp ./libs/* /src/www/monodocs/default/bin/
-cp ./Default.aspx /src/www/monodocs/default/
+rm -r /srv/www/monodocs/default
+cp -r ./default /srv/www/monodocs/default
+cp ./libs/* /srv/www/monodocs/default/bin/
+cp ./Default.aspx /srv/www/monodocs/default/
 
 /etc/init.d/nginx restart 
 /etc/init.d/monoserve start

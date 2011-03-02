@@ -17,7 +17,7 @@ DESC=monoserver
 MONOSERVER=$(which fastcgi-mono-server4)
 MONOSERVER_PID=$(ps auxf | grep fastcgi-mono-server4.exe | grep -v grep | awk '{print $2}')
 
-WEBAPPS="$(cat /src/www/monodocs/monosites.conf)"
+WEBAPPS="$(cat /srv/www/monodocs/monosites.conf)"
 
 case "$1" in
         start)
