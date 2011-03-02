@@ -16,7 +16,7 @@ zypper -n --gpg-auto-import-keys refresh --repo mono-stable
 zypper -n --gpg-auto-import-keys refresh --repo openSUSE:Factory:Contrib 
 zypper -n dist-upgrade --repo mono-stable
 zypper -n dist-upgrade --repo openSUSE:Factory:Contrib 
-zypper -n install mono unzip xsp4 nginx monotools-server mono-data mono-data-sqlite mono-data-oracle mono-data-postgresql mono-mvc mono-nunit mono-tools mono-extras mono-addins mono-web mono-cyclic libgdiplus0
+zypper -n install mono unzip xsp4 nginx-0.9 monotools-server mono-data mono-data-sqlite mono-data-oracle mono-data-postgresql mono-mvc mono-nunit mono-tools mono-extras mono-addins mono-web mono-cyclic libgdiplus0
 
 echo
 echo "Configuring system"
