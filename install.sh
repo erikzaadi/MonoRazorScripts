@@ -1,8 +1,8 @@
 ﻿#!/bin/sh
 
-#echo
-#echo "Installing Mono on Nginx with Razor support"
-#echo
+echo
+echo "Installing Mono on Nginx with Razor support"
+echo
 
 mkdir -p /srv/www/monodocs
 
