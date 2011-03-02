@@ -10,13 +10,13 @@ echo
 echo "Taking care of dependencies"
 echo
 
-zypper --non-interactive addrepo http://ftp.novell.com/pub/mono/download-stable/openSUSE_11.3 mono-stable
-zypper --non-interactive addrepo http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/ openSUSE:Factory:Contrib 
-zypper --non-interactive refresh --repo mono-stable
-zypper --non-interactive refresh --repo openSUSE:Factory:Contrib 
-zypper --non-interactive dist-upgrade --repo mono-stable
-zypper --non-interactive dist-upgrade --repo openSUSE:Factory:Contrib 
-zypper --non-interactive install mono unzip xsp4 nginx monotools-server mono-data mono-data-sqlite mono-data-oracle mono-data-postgresql mono-mvc mono-nunit mono-tools mono-extras mono-addins mono-web mono-cyclic libgdiplus0
+zypper -n addrepo http://ftp.novell.com/pub/mono/download-stable/openSUSE_11.3 mono-stable
+zypper -n addrepo http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/ openSUSE:Factory:Contrib 
+zypper -n --gpg-auto-import-keys refresh --repo mono-stable
+zypper -n --gpg-auto-import-keys refresh --repo openSUSE:Factory:Contrib 
+zypper -n dist-upgrade --repo mono-stable
+zypper -n dist-upgrade --repo openSUSE:Factory:Contrib 
+zypper -n install mono unzip xsp4 nginx monotools-server mono-data mono-data-sqlite mono-data-oracle mono-data-postgresql mono-mvc mono-nunit mono-tools mono-extras mono-addins mono-web mono-cyclic libgdiplus0
 
 echo
 echo "Configuring system"
