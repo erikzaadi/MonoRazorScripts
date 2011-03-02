@@ -1,0 +1,6 @@
+Set of scripts to get you started with a fresh installation of OpenSuse, with nginx and mono running asp.net mvc 3 sites using the Razor view engine.
+
+clone (https://github.com/erikzaadi/MonoRazorScripts.git) or download and unzip (https://github.com/erikzaadi/MonoRazorScripts/zipball/master) this repository and run 
+sudo sh ./install.sh
+
+See [BLOGPOST] for more details
