@@ -10,8 +10,8 @@ echo
 echo "Taking care of dependencies"
 echo
 
-zypper -n addrepo http://ftp.novell.com/pub/mono/download-stable/openSUSE_11.3 mono-stable
-zypper -n addrepo http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.3/ openSUSE:Factory:Contrib 
+zypper -n addrepo http://ftp.novell.com/pub/mono/download-stable/openSUSE_11.4 mono-stable
+zypper -n addrepo http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.4/ openSUSE:Factory:Contrib 
 zypper -n --gpg-auto-import-keys refresh --repo mono-stable
 zypper -n --gpg-auto-import-keys refresh --repo openSUSE:Factory:Contrib 
 zypper -n dist-upgrade --repo mono-stable
