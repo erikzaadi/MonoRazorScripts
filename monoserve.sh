@@ -4,7 +4,7 @@
 # Provides:          monoserve.sh
 # Required-Start:    $local_fs $syslog $remote_fs
 # Required-Stop:     $local_fs $syslog $remote_fs
-# Default-Start:     2 3 4 5
+# Default-Start:     2 3 5
 # Default-Stop:      0 1 6
 # Short-Description: Start fastcgi mono server with hosts
 ### END INIT INFO
