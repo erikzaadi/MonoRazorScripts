@@ -38,6 +38,9 @@ case "$1" in
                         echo "mono server is not running"
                 fi
         ;;
+        restart)
+                /etc/init.d/monoserve stop && /etc/init.d/monoserve start
+        ;;
 esac
 
 exit 0
