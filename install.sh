@@ -11,12 +11,15 @@ echo "Taking care of dependencies"
 echo
 
 zypper -n addrepo http://ftp.novell.com/pub/mono/download-stable/openSUSE_11.4 mono-stable
-zypper -n addrepo http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.4/ openSUSE:Factory:Contrib 
+#zypper -n addrepo http://download.opensuse.org/repositories/openSUSE:/Factory:/Contrib/openSUSE_11.4/ openSUSE:Factory:Contrib 
+zypper -n addrepo http://download.opensuse.org/repositories/server:/http/openSUSE_11.4/ http-server
 zypper -n --gpg-auto-import-keys refresh --repo mono-stable
-zypper -n --gpg-auto-import-keys refresh --repo openSUSE:Factory:Contrib 
+#zypper -n --gpg-auto-import-keys refresh --repo openSUSE:Factory:Contrib 
+zypper -n --gpg-auto-import-keys refresh --repo http-server 
 zypper -n dist-upgrade --repo mono-stable
-zypper -n dist-upgrade --repo openSUSE:Factory:Contrib 
-zypper -n install unzip nginx-0.8 monotools-server mono-data mono-data-sqlite mono-data-oracle mono-data-postgresql mono-mvc mono-nunit mono-tools mono-extras mono-addins mono-web libgdiplus0
+#zypper -n dist-upgrade --repo openSUSE:Factory:Contrib 
+zypper -n dist-upgrade --repo http-server 
+zypper -n install unzip nginx-1.0 monotools-server mono-data mono-data-sqlite mono-data-oracle mono-data-postgresql mono-mvc mono-nunit mono-tools mono-extras mono-addins mono-web libgdiplus0
 
 echo
 echo "Configuring system"
